@@ -6,6 +6,10 @@ print("Welcome!")
 
 choice = input("Pick a number (1, 2 or 3) or write 'random': ")
 
+while choice not in ["1", "2", "3", "random"]:
+    print("Invalid choice. Please try again.")
+    choice = input("Pick a number (1, 2 or 3) or write 'random': ")
+    
 if choice == "random":
 	templ_num = random.randint(1, 3)
 else:
